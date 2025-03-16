@@ -32,12 +32,6 @@ const popularCities = [
     description: "Pink City known for its stunning palaces and rich heritage",
   },
   {
-    name: "Varanasi",
-    code: "BSB",
-    image: "https://images.unsplash.com/photo-1567415361990-c0492c3d7b26?q=80&w=1000",
-    description: "The spiritual capital of India located on the banks of the Ganges",
-  },
-  {
     name: "Kolkata",
     code: "HWH",
     image: "https://images.unsplash.com/photo-1558431382-27e303142255?q=80&w=1000",
