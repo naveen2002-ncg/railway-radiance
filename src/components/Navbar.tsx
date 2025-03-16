@@ -8,6 +8,7 @@ import {
   Train,
   TicketPlus,
   Search,
+  FileSearch,
   Calendar,
   MapPin
 } from "lucide-react";
@@ -47,7 +48,8 @@ const Navbar = () => {
               <Link to="/search" className="text-irctc-blue hover:text-irctc-red px-3 py-2 text-sm font-medium">
                 Search Trains
               </Link>
-              <Link to="/pnr" className="text-irctc-blue hover:text-irctc-red px-3 py-2 text-sm font-medium">
+              <Link to="/pnr" className="text-irctc-blue hover:text-irctc-red px-3 py-2 text-sm font-medium flex items-center gap-1">
+                <FileSearch className="h-4 w-4" />
                 PNR Status
               </Link>
               <Link to="/bookings" className="text-irctc-blue hover:text-irctc-red px-3 py-2 text-sm font-medium">
@@ -92,6 +94,12 @@ const Navbar = () => {
               </DropdownMenu>
             ) : (
               <div className="flex space-x-2">
+                <Link to="/pnr">
+                  <Button variant="outline" className="text-irctc-blue border-irctc-blue hover:bg-irctc-blue hover:text-white flex items-center gap-1.5">
+                    <FileSearch className="h-4 w-4" />
+                    PNR Status
+                  </Button>
+                </Link>
                 <Link to="/login">
                   <Button variant="outline" className="text-irctc-blue border-irctc-blue hover:bg-irctc-blue hover:text-white">
                     Login
@@ -139,9 +147,10 @@ const Navbar = () => {
             </Link>
             <Link
               to="/pnr"
-              className="block px-3 py-2 text-base font-medium text-irctc-blue hover:text-irctc-red"
+              className="block px-3 py-2 text-base font-medium text-irctc-blue hover:text-irctc-red flex items-center gap-2"
               onClick={toggleMenu}
             >
+              <FileSearch className="h-5 w-5" />
               PNR Status
             </Link>
             <Link
