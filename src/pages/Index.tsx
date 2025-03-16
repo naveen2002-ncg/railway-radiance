@@ -1,9 +1,9 @@
-
 import { Link } from "react-router-dom";
 import { Calendar, Clock, Train, Map, TicketPlus, CreditCard } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SearchForm from "@/components/SearchForm";
+import CityCarousel from "@/components/CityCarousel";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -40,6 +40,20 @@ const Index = () => {
             {/* Search Form */}
             <SearchForm />
           </div>
+        </div>
+      </section>
+      
+      {/* Popular Cities Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-irctc-blue mb-4">
+            Explore Popular Cities in India
+          </h2>
+          <p className="text-center text-gray-600 mb-10 max-w-3xl mx-auto">
+            Discover the beauty and culture of India's most iconic destinations
+          </p>
+          
+          <CityCarousel />
         </div>
       </section>
       
