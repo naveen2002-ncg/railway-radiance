@@ -34,7 +34,7 @@ const popularCities = [
   {
     name: "Varanasi",
     code: "BSB",
-    image: "https://images.unsplash.com/photo-1561361058-c24ceccc5936?q=80&w=1000",
+    image: "https://images.unsplash.com/photo-1567415361990-c0492c3d7b26?q=80&w=1000",
     description: "The spiritual capital of India located on the banks of the Ganges",
   },
   {

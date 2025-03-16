@@ -94,12 +94,6 @@ const Navbar = () => {
               </DropdownMenu>
             ) : (
               <div className="flex space-x-2">
-                <Link to="/pnr">
-                  <Button variant="outline" className="text-irctc-blue border-irctc-blue hover:bg-irctc-blue hover:text-white flex items-center gap-1.5">
-                    <FileSearch className="h-4 w-4" />
-                    PNR Status
-                  </Button>
-                </Link>
                 <Link to="/login">
                   <Button variant="outline" className="text-irctc-blue border-irctc-blue hover:bg-irctc-blue hover:text-white">
                     Login
